@@ -12,7 +12,6 @@ export default function Heading() {
     const menu = menuButton.current,
       navigationBar = navBar.current;
 
-    console.log(menu);
     menu.childNodes[0].addEventListener("click", () => {
       navigationBar.classList.forEach((className) => {
         if (className === "hidden") {

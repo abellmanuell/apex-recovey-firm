@@ -1,9 +1,32 @@
-import React from "react";
+import React, { useState } from "react";
+import axios from "axios";
 import { ImWhatsapp } from "react-icons/im";
 import { HiOutlineMail } from "react-icons/hi";
 import { FiPhoneCall } from "react-icons/fi";
 
 export default function Contact() {
+  const [firstName, setFirstName] = useState("");
+  const [lastName, setLastName] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
+  const [modal, setModal] = useState("");
+
+  async function sendMessage(ev) {
+    ev.preventDefault();
+
+    await axios.get(`/api/sanctum/csrf-cookie`);
+    const response = await axios.post(`/api/contact`, {
+      first_name: firstName,
+      last_name: lastName,
+      email: email,
+      message: message,
+    });
+
+    if (response.status === 200) {
+      setModal("Form Submitted Successfully!!!");
+    }
+  }
+
   return (
     <article className="bg-tw-blue-500" id="contact">
       <section className="w-[90vw] mx-auto lg:w-80vw pt-20 pb-10">
@@ -15,6 +38,9 @@ export default function Contact() {
             Feel free to reach out for any enquires or queries you might have.
           </p>
 
+          <p className=" text-green-500 text-center font-bold text-lg ">
+            {modal}
+          </p>
           <div className="my-4">
             <form method="post">
               <div className="grid md:grid-cols-2 gap-4">
@@ -24,6 +50,8 @@ export default function Contact() {
                   required
                   name="first_name"
                   placeholder="First Name"
+                  value={firstName}
+                  onChange={(ev) => setFirstName(ev.target.value)}
                 />
                 <input
                   className="py-2 p-4 rounded-md bg-tw-blue-600 text-white"
@@ -31,6 +59,8 @@ export default function Contact() {
                   required
                   name="last_name"
                   placeholder="Last Name"
+                  value={lastName}
+                  onChange={(ev) => setLastName(ev.target.value)}
                 />
 
                 <input
@@ -39,6 +69,8 @@ export default function Contact() {
                   required
                   name="email"
                   placeholder="Email Address"
+                  value={email}
+                  onChange={(ev) => setEmail(ev.target.value)}
                 />
                 <input
                   className="py-2 p-4 rounded-md bg-tw-blue-600 text-white"
@@ -48,8 +80,8 @@ export default function Contact() {
                   placeholder="Confirm Email Address"
                 />
                 <textarea
-                  name=""
-                  id=""
+                  value={message}
+                  onChange={(ev) => setMessage(ev.target.value)}
                   cols="30"
                   rows="3"
                   placeholder="Your Message"
@@ -61,6 +93,7 @@ export default function Contact() {
                   className="py-2 p-4 rounded-md my-4 bg-tw-blue-400 text-white font-bold cursor-pointer"
                   type="submit"
                   value="Send Message"
+                  onClick={(ev) => sendMessage(ev)}
                 />
               </div>
             </form>
