@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* html,
+body,
+#root {
+  min-height: 100%;
+} */
+
+@layer components {
+  #hero-container {
+    background: linear-gradient(
+      to bottom right,
+      #d1d1eb,
+      transparent,
+      transparent,
+      #cff0f0
+    );
+  }
+}
