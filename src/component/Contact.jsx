@@ -1,8 +1,13 @@
 import React, { useState } from "react";
 import axios from "axios";
+import Footer from "./Footer";
+
 import { ImWhatsapp } from "react-icons/im";
 import { HiOutlineMail } from "react-icons/hi";
 import { FiPhoneCall } from "react-icons/fi";
+import { BsInstagram } from "react-icons/bs";
+import { TfiTwitter } from "react-icons/tfi";
+import { FaTelegramPlane } from "react-icons/fa";
 
 export default function Contact() {
   const [firstName, setFirstName] = useState("");
@@ -24,6 +29,10 @@ export default function Contact() {
 
     if (response.status === 200) {
       setModal("Form Submitted Successfully!!!");
+      setFirstName("");
+      setLastName("");
+      setEmail("");
+      setMessage("");
     }
   }
 
@@ -99,14 +108,36 @@ export default function Contact() {
             </form>
           </div>
 
-          <p className="text-white text-lg text-center my-4 ">OR</p>
-          <div className="text-white text-3xl flex justify-center space-x-4">
+          <p className="text-white text-lg text-center my-4">OR</p>
+          <div className="text-white text-3xl flex flex-wrap justify-center space-x-4">
             <a
-              href="#"
+              href="https://www.instagram.com/apexcryptorecovery/"
+              target="_blank"
+              className="p-4 bg-tw-blue-400 rounded-full hover:text-tw-blue-300"
+            >
+              <BsInstagram />
+            </a>
+            <a
+              href="https://www.twitter.com/Apex77568696945/"
+              target="_blank"
+              className="p-4 bg-tw-blue-400 rounded-full hover:text-tw-blue-300"
+            >
+              <TfiTwitter />
+            </a>
+            <a
+              href="https://wa.me/+16157849334/"
               target="_blank"
               className="p-4 bg-tw-blue-400 rounded-full hover:text-tw-blue-300"
             >
               <ImWhatsapp />
+            </a>
+
+            <a
+              href="https://t.me/Apexcryptorecoveryfirm/"
+              target="_blank"
+              className="p-4 bg-tw-blue-400 rounded-full hover:text-tw-blue-300"
+            >
+              <FaTelegramPlane />
             </a>
             <a
               href="mailto:support@apexcryptorecovery.com"
@@ -116,7 +147,7 @@ export default function Contact() {
               <HiOutlineMail />
             </a>
             <a
-              href=""
+              href="tel:+16157849334"
               target="_blank"
               className="p-4 bg-tw-blue-400 rounded-full hover:text-tw-blue-300"
             >
@@ -124,76 +155,7 @@ export default function Contact() {
             </a>
           </div>
 
-          <div className="md:flex justify-between text-lg text-white mt-10 space-y-4 md:space-x-4 md:space-y-0">
-            <h1 className="font-bold font-outfit text-2xl">APEX</h1>
-            <div>
-              <h3 className="font-bold">Apex</h3>
-              <ul>
-                <a href="#">
-                  <li>Home</li>
-                </a>
-                <a href="#">
-                  <li>About Us</li>
-                </a>
-                <a href="#">
-                  <li>Services</li>
-                </a>
-                <a href="#">
-                  <li>Scams</li>
-                </a>
-              </ul>
-            </div>
-
-            <div>
-              <h3 className="font-bold">Market</h3>
-              <ul>
-                <a href="#">
-                  <li>BITCOIN</li>
-                </a>
-                <a href="#">
-                  <li>ETHEREUM</li>
-                </a>
-                <a href="#">
-                  <li>USDT</li>
-                </a>
-              </ul>
-            </div>
-
-            <div>
-              <h3 className="font-bold">Contact</h3>
-              <ul>
-                <a href="#">
-                  <li>Email</li>
-                </a>
-                <a href="#">
-                  <li>Whatsapp</li>
-                </a>
-                <a href="#">
-                  <li>Instagrram</li>
-                </a>
-                <a href="#">
-                  <li>Twitter</li>
-                </a>
-              </ul>
-            </div>
-
-            <div>
-              <h2 className="font-bold">Join Out Newsletter</h2>
-
-              <div className="my-2 bg-tw-blue-600 inline-block py-1 px-2 space-x-2 rounded-full">
-                <input
-                  type="text"
-                  name=""
-                  id=""
-                  className="outline-none bg-transparent text-white py-2 px-2"
-                  placeholder="Enter your Email Adderss"
-                />
-                <button className="bg-tw-blue-400 px-4 py-2 rounded-full">
-                  Submit
-                </button>
-              </div>
-            </div>
-          </div>
+          <Footer />
         </div>
       </section>
     </article>
