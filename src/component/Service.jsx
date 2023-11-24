@@ -9,7 +9,7 @@ export default function Service() {
         </h2>
 
         <div className="grid md:grid-cols-4 gap-5 md:gap-10">
-          <div className="border-2 border-tw-blue-500 text-tw-blue-500 rounded-md flex flex-col justify-center items-center p-10 text-center">
+          <div className="border border-gray-400 hover:bg-gray-50 text-tw-blue-500 rounded-md flex flex-col justify-center items-center p-10 text-center">
             <h1 className="text-xl font-bold font-outfit">
               Cryptocurrency Wallet Recovery Services
             </h1>
@@ -18,7 +18,7 @@ export default function Service() {
             </p>
           </div>
 
-          <div className="border-2 border-tw-blue-500 text-tw-blue-500 rounded-md flex flex-col justify-center items-center p-10 text-center">
+          <div className="border border-gray-400 hover:bg-gray-50 text-tw-blue-500 rounded-md flex flex-col justify-center items-center p-10 text-center">
             <h1 className="text-xl font-bold font-outfit">
               Seed Words and Passphrase Recovery
             </h1>
@@ -27,7 +27,7 @@ export default function Service() {
             </p>
           </div>
 
-          <div className="border-2 border-tw-blue-500 text-tw-blue-500 rounded-md flex flex-col justify-center items-center p-10 text-center">
+          <div className="border border-gray-400 hover:bg-gray-50 text-tw-blue-500 rounded-md flex flex-col justify-center items-center p-10 text-center">
             <h1 className="text-xl font-bold font-outfit">
               Recover Funds Sent to the Wrong Address
             </h1>
@@ -37,7 +37,7 @@ export default function Service() {
             </p>
           </div>
 
-          <div className="border-2 border-tw-blue-500 text-tw-blue-500 rounded-md flex flex-col justify-center items-center p-10 text-center">
+          <div className="border border-gray-400 hover:bg-gray-50 text-tw-blue-500 rounded-md flex flex-col justify-center items-center p-10 text-center">
             <h1 className="text-xl font-bold font-outfit">
               Old Hard Drives, Phones & Flash Memory
             </h1>
@@ -47,7 +47,7 @@ export default function Service() {
             </p>
           </div>
           <div></div>
-          <div className="border-2 border-tw-blue-500 text-tw-blue-500 rounded-md flex flex-col justify-center items-center p-10 text-center">
+          <div className="border border-gray-400 hover:bg-gray-50 text-tw-blue-500 rounded-md flex flex-col justify-center items-center p-10 text-center">
             <h1 className="text-xl font-bold font-outfit">
               Help, Advice and Cryptocurrency Consultancy
             </h1>
@@ -57,7 +57,7 @@ export default function Service() {
             </p>
           </div>
 
-          <div className="border-2 border-tw-blue-500 text-tw-blue-500 rounded-md flex flex-col justify-center items-center p-10 text-center">
+          <div className="border border-gray-400 hover:bg-gray-50 text-tw-blue-500 rounded-md flex flex-col justify-center items-center p-10 text-center">
             <h1 className="text-xl font-bold font-outfit">
               Inaccessible Hardware Wallets (Trezor, Nano)
             </h1>

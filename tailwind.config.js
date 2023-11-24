@@ -10,8 +10,8 @@ export default {
       },
 
       colors: {
-        "tw-blue-600": "#010F58",
-        "tw-blue-500": "#1E1A56",
+        "tw-blue-600": "#efefef",
+        "tw-blue-500": "#000",
         "tw-blue-400": "#3B3FB6",
         "tw-blue-300": "#1E90FF",
         "tw-sky-400": "#555581",

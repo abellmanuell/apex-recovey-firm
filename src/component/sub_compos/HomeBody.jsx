@@ -16,7 +16,7 @@ export default function HomeBody() {
                 Bitcoin And <br /> Cryptocurrency <br /> Assets Recovery <br />
                 Services
               </h1>
-              <p className="text-tw-sky-400 text-xl font-roboto my-5">
+              <p className="text-neutral-400 text-xl font-roboto my-5">
                 Trust the most established brand in the asset recovery ecosystem
                 to recover your wallet today.
               </p>
@@ -30,7 +30,7 @@ export default function HomeBody() {
               </a>
 
               <a
-                className="inline-block px-4 py-3 rounded-full text-white bg-[#C4C048] border-tw-blue-400"
+                className="inline-block px-4 py-3 rounded-full text-white bg-orange-400 border-tw-blue-400 hover:bg-orange-500"
                 href="#contact"
               >
                 Recovery Now
@@ -53,7 +53,7 @@ export default function HomeBody() {
           >
             Trust By
           </h5>
-          <div className="bg-tw-sky-400 rounded-md p-2 grid grid-cols-2 md:grid-cols-4 gap-4 place-items-center">
+          <div className="bg-neutral-800 rounded-md p-2 grid grid-cols-2 md:grid-cols-4 gap-4 place-items-center">
             <div>
               <img
                 src={techcrunch}

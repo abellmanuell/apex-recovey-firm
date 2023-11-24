@@ -54,7 +54,7 @@ export default function Contact() {
             <form method="post">
               <div className="grid md:grid-cols-2 gap-4">
                 <input
-                  className="py-2 p-4 rounded-md bg-tw-blue-600 text-white"
+                  className="py-2 p-4 rounded-md bg-tw-blue-600 "
                   type="text"
                   required
                   name="first_name"
@@ -63,7 +63,7 @@ export default function Contact() {
                   onChange={(ev) => setFirstName(ev.target.value)}
                 />
                 <input
-                  className="py-2 p-4 rounded-md bg-tw-blue-600 text-white"
+                  className="py-2 p-4 rounded-md bg-tw-blue-600 "
                   type="text"
                   required
                   name="last_name"
@@ -73,7 +73,7 @@ export default function Contact() {
                 />
 
                 <input
-                  className="py-2 p-4 rounded-md bg-tw-blue-600 text-white"
+                  className="py-2 p-4 rounded-md bg-tw-blue-600 "
                   type="email"
                   required
                   name="email"
@@ -82,7 +82,7 @@ export default function Contact() {
                   onChange={(ev) => setEmail(ev.target.value)}
                 />
                 <input
-                  className="py-2 p-4 rounded-md bg-tw-blue-600 text-white"
+                  className="py-2 p-4 rounded-md bg-tw-blue-600 "
                   type="email"
                   required
                   name="repeat_email"
@@ -94,12 +94,12 @@ export default function Contact() {
                   cols="30"
                   rows="3"
                   placeholder="Your Message"
-                  className=" p-4 rounded-md text-white bg-tw-blue-600 md:col-span-2"
+                  className=" p-4 rounded-md  bg-tw-blue-600 md:col-span-2"
                 ></textarea>
               </div>
               <div className="flex justify-end">
                 <input
-                  className="py-2 p-4 rounded-md my-4 bg-tw-blue-400 text-white font-bold cursor-pointer"
+                  className="py-2 p-4 rounded-md my-4 bg-tw-blue-400 text-white  font-bold cursor-pointer"
                   type="submit"
                   value="Send Message"
                   onClick={(ev) => sendMessage(ev)}
@@ -109,7 +109,7 @@ export default function Contact() {
           </div>
 
           <p className="text-white text-lg text-center my-4">OR</p>
-          <div className="text-white text-3xl flex flex-wrap justify-center space-x-4">
+          <div className="text-white text-lg flex flex-wrap justify-center space-x-4">
             <a
               href="https://www.instagram.com/apexcryptorecovery/"
               target="_blank"
