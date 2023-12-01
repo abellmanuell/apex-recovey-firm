@@ -38,23 +38,23 @@ export default function Contact() {
 
   return (
     <article className="bg-tw-blue-500" id="contact">
-      <section className="w-[90vw] mx-auto lg:w-80vw pt-20 pb-10">
+      <section className="lg:w-80vw mx-auto w-[90vw] pb-10 pt-20">
         <div>
-          <h1 className="font-black text-5xl text-center text-white p-4">
+          <h1 className="p-4 text-center text-5xl font-black text-white">
             Contact Us
           </h1>
-          <p className="text-white text-center text-lg">
+          <p className="text-center text-lg text-white">
             Feel free to reach out for any enquires or queries you might have.
           </p>
 
-          <p className=" text-green-500 text-center font-bold text-lg ">
+          <p className=" text-center text-lg font-bold text-green-500 ">
             {modal}
           </p>
           <div className="my-4">
             <form method="post">
-              <div className="grid md:grid-cols-2 gap-4">
+              <div className="grid gap-4 md:grid-cols-2">
                 <input
-                  className="py-2 p-4 rounded-md bg-tw-blue-600 "
+                  className="rounded-md bg-tw-blue-600 p-4 py-2 "
                   type="text"
                   required
                   name="first_name"
@@ -63,7 +63,7 @@ export default function Contact() {
                   onChange={(ev) => setFirstName(ev.target.value)}
                 />
                 <input
-                  className="py-2 p-4 rounded-md bg-tw-blue-600 "
+                  className="rounded-md bg-tw-blue-600 p-4 py-2 "
                   type="text"
                   required
                   name="last_name"
@@ -73,7 +73,7 @@ export default function Contact() {
                 />
 
                 <input
-                  className="py-2 p-4 rounded-md bg-tw-blue-600 "
+                  className="rounded-md bg-tw-blue-600 p-4 py-2 "
                   type="email"
                   required
                   name="email"
@@ -82,7 +82,7 @@ export default function Contact() {
                   onChange={(ev) => setEmail(ev.target.value)}
                 />
                 <input
-                  className="py-2 p-4 rounded-md bg-tw-blue-600 "
+                  className="rounded-md bg-tw-blue-600 p-4 py-2 "
                   type="email"
                   required
                   name="repeat_email"
@@ -94,12 +94,12 @@ export default function Contact() {
                   cols="30"
                   rows="3"
                   placeholder="Your Message"
-                  className=" p-4 rounded-md  bg-tw-blue-600 md:col-span-2"
+                  className=" rounded-md bg-tw-blue-600  p-4 md:col-span-2"
                 ></textarea>
               </div>
               <div className="flex justify-end">
                 <input
-                  className="py-2 p-4 rounded-md my-4 bg-tw-blue-400 text-white  font-bold cursor-pointer"
+                  className="my-4 cursor-pointer rounded-md bg-tw-blue-400 p-4 py-2  font-bold text-white"
                   type="submit"
                   value="Send Message"
                   onClick={(ev) => sendMessage(ev)}
@@ -108,26 +108,26 @@ export default function Contact() {
             </form>
           </div>
 
-          <p className="text-white text-lg text-center my-4">OR</p>
-          <div className="text-white text-lg flex flex-wrap justify-center space-x-4">
+          <p className="my-4 text-center text-lg text-white">OR</p>
+          <div className="flex flex-wrap justify-center space-x-4 text-lg text-white">
             <a
               href="https://www.instagram.com/apexcryptorecovery/"
               target="_blank"
-              className="p-4 bg-tw-blue-400 rounded-full hover:text-tw-blue-300"
+              className="rounded-full bg-tw-blue-400 p-4 hover:text-tw-blue-300"
             >
               <BsInstagram />
             </a>
             <a
               href="https://www.twitter.com/Apex77568696945/"
               target="_blank"
-              className="p-4 bg-tw-blue-400 rounded-full hover:text-tw-blue-300"
+              className="rounded-full bg-tw-blue-400 p-4 hover:text-tw-blue-300"
             >
               <TfiTwitter />
             </a>
             <a
               href="https://wa.me/+16157849334/"
               target="_blank"
-              className="p-4 bg-tw-blue-400 rounded-full hover:text-tw-blue-300"
+              className="rounded-full bg-tw-blue-400 p-4 hover:text-tw-blue-300"
             >
               <ImWhatsapp />
             </a>
@@ -135,21 +135,21 @@ export default function Contact() {
             <a
               href="https://t.me/Apexcryptorecoveryfirm/"
               target="_blank"
-              className="p-4 bg-tw-blue-400 rounded-full hover:text-tw-blue-300"
+              className="rounded-full bg-tw-blue-400 p-4 hover:text-tw-blue-300"
             >
               <FaTelegramPlane />
             </a>
             <a
-              href="mailto:support@apexcryptorecovery.com"
+              href="mailto:support@apexrecoveryfirm.co"
               target="_blank"
-              className="p-4 bg-tw-blue-400 rounded-full hover:text-tw-blue-300"
+              className="rounded-full bg-tw-blue-400 p-4 hover:text-tw-blue-300"
             >
               <HiOutlineMail />
             </a>
             <a
               href="tel:+16157849334"
               target="_blank"
-              className="p-4 bg-tw-blue-400 rounded-full hover:text-tw-blue-300"
+              className="rounded-full bg-tw-blue-400 p-4 hover:text-tw-blue-300"
             >
               <FiPhoneCall />
             </a>

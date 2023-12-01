@@ -7,11 +7,11 @@ export default function AboutUs() {
     <article>
       <Heading />
       <main id="hero-container">
-        <div className="w-[90vw] mx-auto lg:w-80vw pt-20 text-2xl text-tw-blue-600">
-          <h1 className="uppercase text-lg font-outfit font-bold">About us</h1>
+        <div className="lg:w-80vw mx-auto w-[90vw] pt-20 text-2xl ">
+          <h1 className="font-outfit text-lg font-bold uppercase">About us</h1>
 
           <section>
-            <h2 className="font-outfit font-bold text-3xl py-3">
+            <h2 className="py-3 font-outfit text-3xl font-bold">
               Making Sure Your Crypto Is Always Yours
             </h2>
             <p>
@@ -39,7 +39,7 @@ export default function AboutUs() {
           </section>
           <section>
             <div>
-              <h2 className="font-outfit font-bold text-3xl py-3">
+              <h2 className="py-3 font-outfit text-3xl font-bold">
                 More About Our Services
               </h2>
               <p>

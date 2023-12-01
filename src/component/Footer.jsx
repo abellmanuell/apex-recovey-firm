@@ -2,8 +2,8 @@ import React from "react";
 
 export default function Footer() {
   return (
-    <div className="md:flex justify-between text-white space-y-4 md:space-x-4 md:space-y-0 bg-tw-blue-500 p-10">
-      <h1 className="font-bold font-outfit text-2xl">APEX</h1>
+    <div className="justify-between space-y-4 bg-tw-blue-500 p-10 text-white md:flex md:space-x-4 md:space-y-0">
+      <h1 className="font-outfit text-2xl font-bold">APEX</h1>
       <div>
         <h3 className="font-bold">Apex</h3>
         <ul>
@@ -53,7 +53,7 @@ export default function Footer() {
             <li>Telegram</li>
           </a>
           <p>
-            <b>Email:</b> support@apexcryptorecovery.com
+            <b>Email:</b> support@apexrecoveryfirm.co
           </p>
           <p>
             <b>Telephone:</b>
@@ -65,15 +65,15 @@ export default function Footer() {
       <div>
         <h2 className="font-bold">Join Out Newsletter</h2>
 
-        <div className="my-2 bg-tw-blue-600 inline-block py-1 px-2 space-x-2 rounded-full">
+        <div className="my-2 inline-block space-x-2 rounded-full bg-tw-blue-600 px-2 py-1">
           <input
             type="text"
             name=""
             id=""
-            className="outline-none bg-transparent text-black py-2 px-2"
+            className="bg-transparent px-2 py-2 text-black outline-none"
             placeholder="Enter your Email Adderss"
           />
-          <button className="bg-tw-blue-400 px-4 py-2 rounded-full">
+          <button className="rounded-full bg-tw-blue-400 px-4 py-2">
             Submit
           </button>
         </div>
