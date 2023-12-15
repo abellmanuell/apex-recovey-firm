@@ -68,8 +68,8 @@ export default function Testimony() {
 
           <div className="relative m-5 rounded-md bg-[#0E0E48] px-10 py-20 text-center text-white">
             <p className="py-8 text-lg">
-              “All thanks to apex crypto recovery firm for their legit and
-              efficient recovery experts which assisted me get my funds back..”
+              “All thanks to apex recovery firm for their legit and efficient
+              recovery experts which assisted me get my funds back..”
             </p>
             <span className="block text-center">Heitor - Pinto BRAZIL</span>
           </div>

@@ -53,7 +53,7 @@ export default function Footer() {
             <li>Telegram</li>
           </a>
           <p>
-            <b>Email:</b> support@apexrecoveryfirm.co
+            <b>Email:</b> apexcryptorecoveryfirm@gmail.com
           </p>
           <p>
             <b>Telephone:</b>
