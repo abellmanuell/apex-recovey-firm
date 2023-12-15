@@ -140,7 +140,7 @@ export default function Contact() {
               <FaTelegramPlane />
             </a>
             <a
-              href="mailto:support@apexrecoveryfirm.co"
+              href="mailto:apexcryptorecoveryfirm@gmail.com"
               target="_blank"
               className="rounded-full bg-tw-blue-400 p-4 hover:text-tw-blue-300"
             >
