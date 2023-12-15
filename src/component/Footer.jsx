@@ -40,7 +40,7 @@ export default function Footer() {
       <div>
         <h3 className="font-bold">Contact</h3>
         <ul>
-          <a href="https://wa.me/+16157849334/">
+          <a href="https://wa.me/+19256957556/">
             <li>Whatsapp</li>
           </a>
           <a href="https://www.instagram.com/apexcryptorecovery/">
@@ -57,7 +57,7 @@ export default function Footer() {
           </p>
           <p>
             <b>Telephone:</b>
-            +16157849334
+            +1(925) 695-7556
           </p>
         </ul>
       </div>
