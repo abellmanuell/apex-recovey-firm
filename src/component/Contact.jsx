@@ -125,7 +125,7 @@ export default function Contact() {
               <TfiTwitter />
             </a>
             <a
-              href="https://wa.me/+16157849334/"
+              href="https://wa.me/+19256957556/"
               target="_blank"
               className="rounded-full bg-tw-blue-400 p-4 hover:text-tw-blue-300"
             >
@@ -147,7 +147,7 @@ export default function Contact() {
               <HiOutlineMail />
             </a>
             <a
-              href="tel:+16157849334"
+              href="tel:+19256957556"
               target="_blank"
               className="rounded-full bg-tw-blue-400 p-4 hover:text-tw-blue-300"
             >
